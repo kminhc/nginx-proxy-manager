@@ -167,6 +167,8 @@
       "add": "Add Stream",
       "form-title": "{id, select, undefined{New} other{Edit}} Stream",
       "incoming-port": "Incoming Port",
+      "invalid-port-range": "Incoming port range must contain two numbers between 1 and 65535, and the starting port must be lower than the ending port.",
+      "invalid-port": "Port must be a number between 1 and 65535.",
       "forwarding-host": "Forward Host",
       "forwarding-port": "Forward Port",
       "tcp-forwarding": "TCP Forwarding",

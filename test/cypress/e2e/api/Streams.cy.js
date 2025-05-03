@@ -38,7 +38,7 @@ describe('Streams', () => {
 			token: token,
 			path:  '/api/nginx/streams',
 			data:  {
-				incoming_port: 1500,
+				incoming_port_from: 1500,
 				forwarding_host: '127.0.0.1',
 				forwarding_port: 80,
 				certificate_id: 0,

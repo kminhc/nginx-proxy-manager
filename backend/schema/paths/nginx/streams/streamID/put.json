@@ -29,14 +29,20 @@
 					"additionalProperties": false,
 					"minProperties": 1,
 					"properties": {
-						"incoming_port": {
-							"$ref": "../../../../components/stream-object.json#/properties/incoming_port"
+						"incoming_port_from": {
+							"$ref": "../../../../components/stream-object.json#/properties/incoming_port_from"
+						},
+						"incoming_port_to": {
+							"$ref": "../../../../components/stream-object.json#/properties/incoming_port_to"
 						},
 						"forwarding_host": {
 							"$ref": "../../../../components/stream-object.json#/properties/forwarding_host"
 						},
-						"forwarding_port": {
-							"$ref": "../../../../components/stream-object.json#/properties/forwarding_port"
+						"forwarding_port_from": {
+							"$ref": "../../../../components/stream-object.json#/properties/forwarding_port_from"
+						},
+						"forwarding_port_to": {
+							"$ref": "../../../../components/stream-object.json#/properties/forwarding_port_to"
 						},
 						"tcp_forwarding": {
 							"$ref": "../../../../components/stream-object.json#/properties/tcp_forwarding"

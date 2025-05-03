@@ -17,6 +17,6 @@ module.exports = defineConfig({
 		env: {
 			swaggerBase: '{{baseUrl}}/api/schema?ts=' + Date.now(),
 		},
-		baseUrl: 'http://fullstack:81',
+		baseUrl: 'http://localhost:3081',
 	}
 });

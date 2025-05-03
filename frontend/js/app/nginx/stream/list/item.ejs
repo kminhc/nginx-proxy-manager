@@ -5,14 +5,14 @@
 </td>
 <td>
     <div class="text-monospace">
-        <%- incoming_port %>
+        <%- incoming_port_from %><% if (incoming_port_to) { %>-<%- incoming_port_to %><% } %>
     </div>
     <div class="small text-muted">
         <%- i18n('str', 'created-on', {date: formatDbDate(created_on, 'Do MMMM YYYY')}) %>
     </div>
 </td>
 <td>
-    <div class="text-monospace"><%- forwarding_host %>:<%- forwarding_port %></div>
+    <div class="text-monospace"><%- forwarding_host %>:<%- forwarding_port_from %><% if (forwarding_port_to) { %>-<%- forwarding_port_to %><% } %></div>
 </td>
 <td>
     <div>

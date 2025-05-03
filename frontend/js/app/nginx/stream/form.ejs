@@ -17,7 +17,7 @@
                         <div class="col-sm-12 col-md-12">
                             <div class="form-group">
                                 <label class="form-label"><%- i18n('streams', 'incoming-port') %> <span class="form-required">*</span></label>
-                                <input name="incoming_port" type="number" class="form-control text-monospace" placeholder="eg: 8080" min="1" max="65535" value="<%- incoming_port %>" required>
+                                <input name="incoming_port_from" type="text" class="form-control text-monospace" placeholder="eg: 8080 or 8080-9000 for portRange" value="<%= typeof incoming_port_to !== 'undefined' && incoming_port_to !== null && incoming_port_to !== '' ? incoming_port_from + '-' + incoming_port_to : incoming_port_from %>" autocomplete="off" required maxlength="255" title="Enter a number between 1 and 65535, or a range like 8000-9000">
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-8">
@@ -29,7 +29,7 @@
                         <div class="col-sm-4 col-md-4">
                             <div class="form-group">
                                 <label class="form-label"><%- i18n('streams', 'forwarding-port') %> <span class="form-required">*</span></label>
-                                <input name="forwarding_port" type="number" class="form-control text-monospace" placeholder="eg: 80" min="1" max="65535" value="<%- forwarding_port %>" required>
+                                <input name="forwarding_port_from" type="text" class="form-control text-monospace" placeholder="eg: 80" value="<%- typeof forwarding_port_to !== 'undefined' && forwarding_port_to !== null && forwarding_port_to !== '' ?  forwarding_port_from + '-' + forwarding_port_to : forwarding_port_from  %>" autocomplete="off" required maxlength="255" title="Enter a number between 1 and 65535">
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6">
